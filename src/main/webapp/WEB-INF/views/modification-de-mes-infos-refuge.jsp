@@ -18,7 +18,7 @@
 	                    <label for="inputLastname" style="width: 150px;" id="inputLastname" class="col-form-label">Nom</label>
 	                </div>
 	                <div class="col-auto">
-	                    <input type="text" id="inputLastname" name="inputLastname" class="form-control" placeholder="${ personneAModifier.getNom() }">
+	                    <input type="text" id="inputLastname" name="inputLastname" class="form-control" value="${ personneAModifier.getNom() }">
 	                </div>
 	            </div>
 	    
@@ -28,7 +28,7 @@
 	                    <label for="inputEmail" style="width: 150px;" class="col-form-label">Email</label>
 	                </div>
 	                <div class="col-auto">
-	                    <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="${ personneAModifier.getMail() }">
+	                    <input type="email" id="inputEmail" name="inputEmail" class="form-control" value="${ personneAModifier.getMail() }">
 	                </div>
 	            </div>
 	    
@@ -37,7 +37,7 @@
 	                    <label for="inputPhone" style="width: 150px;" class="col-form-label">Numéro de téléphone</label>
 	                </div>
 	                <div class="col-auto">
-	                    <input type="tel" id="inputPhone" name="inputPhone" class="form-control" pattern="[0-9]{10}" placeholder="${ personneAModifier.getTelephone() }">
+	                    <input type="tel" id="inputPhone" name="inputPhone" class="form-control" pattern="[0-9]{10}" value="${ personneAModifier.getTelephone() }">
 	                </div>
 	            </div>
 	    
@@ -53,7 +53,7 @@
 	                    <label for="inputAdresseNumber" style="width: 150px;" class="col-form-label">Numéro</label>
 	                </div>
 	                <div class="col-auto">
-	                    <input type="text" id="inputAdresseNumber" name="inputAdresseNumber" class="form-control" placeholder="${ numero }">
+	                    <input type="text" id="inputAdresseNumber" name="inputAdresseNumber" class="form-control" value="${ numero }">
 	                </div>
 	            </div>
 	    
@@ -62,7 +62,7 @@
 	                    <label for="inputAdresseStreet" style="width: 150px;" class="col-form-label">Voie</label>
 	                </div>
 	                <div class="col-auto">
-	                    <input type="text" id="inputAdresseStreet" name="inputAdresseStreet" class="form-control" placeholder="${ voie }">
+	                    <input type="text" id="inputAdresseStreet" name="inputAdresseStreet" class="form-control" value="${ voie }">
 	                </div>
 	            </div>
 	    
@@ -71,7 +71,7 @@
 	                    <label for="inputAdressePostalCode" style="width: 150px;" class="col-form-label">Code Postal</label>
 	                </div>
 	                <div class="col-auto">
-	                    <input type="text" id="inputAdressePostalCode" name="inputAdressePostalCode" class="form-control" placeholder="${ codePostal }">
+	                    <input type="text" id="inputAdressePostalCode" name="inputAdressePostalCode" class="form-control" value="${ codePostal }">
 	                </div>
 	            </div>
 	    
@@ -80,7 +80,7 @@
 	                    <label for="inputAdresseTown"  style="width: 150px;" class="col-form-label">Ville</label>
 	                </div>
 	                <div class="col-auto">
-	                    <input type="text" id="inputAdresseTown" name="inputAdresseTown" class="form-control" placeholder="${ ville }">
+	                    <input type="text" id="inputAdresseTown" name="inputAdresseTown" class="form-control" value="${ ville }">
 	                </div>
 	            </div>
 	    

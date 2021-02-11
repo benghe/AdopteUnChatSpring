@@ -41,7 +41,7 @@
 				      <td>
 				      	<c:if test="${ connexionId!= personne.id }">
 				      	
-				        	<a href="reglages-supprimer?r=comptes?id=${ personne.id }"> <i style="color:red;" class="far fa-trash-alt"></i> </a>
+				        	<a href="reglages/supprimer?r=comptes&id=${ personne.id }"> <i style="color:red;" class="far fa-trash-alt"></i> </a>
 				      	
 				      	</c:if>
 				      </td>
@@ -54,7 +54,8 @@
 			  	
 			  </tbody>
 			</table>
-	
+			
+			
 	
 	</c:if>
 	
@@ -80,7 +81,7 @@
 				      <td>${ race.libelle }</td>
 				      <td>
 				      	
-				        <a href="reglages-supprimer?r=races?id=${ race.id }"> <i style="color:red;" class="far fa-trash-alt"></i> </a>
+				        <a href="reglages/supprimer?r=races&id=${ race.id }"> <i style="color:red;" class="far fa-trash-alt"></i> </a>
 				      	
 				      </td>
 				      
@@ -92,7 +93,7 @@
 			  	
 			  </tbody>
 			</table>
-	
+			<a class="btn btn-success" href="reglages/add?r=race" role="button">Ajouter</a>
 	
 	</c:if>
 	
@@ -117,7 +118,7 @@
 				      <td>${ couleur.libelle }</td>
 				      <td>
 				      	
-				        <a href="reglages-supprimer?r=couleurs?id=${ couleur.id }"> <i style="color:red;" class="far fa-trash-alt"></i> </a>
+				        <a href="reglages/supprimer?r=couleurs&id=${ couleur.id }"> <i style="color:red;" class="far fa-trash-alt"></i> </a>
 				      	
 				      </td>
 				      
@@ -129,7 +130,7 @@
 			  	
 			  </tbody>
 			</table>
-	
+			<a class="btn btn-success" href="reglages/add?r=couleur" role="button">Ajouter</a>
 	
 	</c:if>
 	
@@ -154,7 +155,7 @@
 				      <td>${ region.libelle }</td>
 				      <td>
 				      	
-				        <a href="reglages-supprimer?r=regions?id=${ region.id }"> <i style="color:red;" class="far fa-trash-alt"></i> </a>
+				        <a href="reglages/supprimer?r=regions&id=${ region.id }"> <i style="color:red;" class="far fa-trash-alt"></i> </a>
 				      	
 				      </td>
 				      
@@ -166,7 +167,7 @@
 			  	
 			  </tbody>
 			</table>
-	
+			<a class="btn btn-success" href="reglages/add?r=region" role="button">Ajouter</a>
 	
 	</c:if>
 	
@@ -193,7 +194,7 @@
 				      <td>${ departement.region.libelle }</td>
 				      <td>
 				      	
-				        <a href="reglages-supprimer?r=departements?id=${ departement.id }"> <i style="color:red;" class="far fa-trash-alt"></i> </a>
+				        <a href="reglages/supprimer?r=departements&id=${ departement.id }"> <i style="color:red;" class="far fa-trash-alt"></i> </a>
 				      	
 				      </td>
 				      
@@ -205,7 +206,7 @@
 			  	
 			  </tbody>
 			</table>
-	
+			<a class="btn btn-success" href="reglages/add?r=departement" role="button">Ajouter</a>
 	
 	</c:if>
 				

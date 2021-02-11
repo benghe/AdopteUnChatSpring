@@ -77,7 +77,7 @@
 
                     <div>
 
-                        <a href="inscription-adoptant"
+                        <a href="compte/inscription-adoptant"
 								class="btn btn-secondary" role="button" aria-pressed="true">Créer mon compte</a>
                     </div>
 
@@ -97,7 +97,7 @@
                   </div>
 
                   <div>
-                      <a href="inscription-refuge"
+                      <a href="compte/inscription-refuge"
 									class="btn btn-secondary" role="button" aria-pressed="true">Adhérer à Adopte un chat</a>
                   </div>
                 </div>
