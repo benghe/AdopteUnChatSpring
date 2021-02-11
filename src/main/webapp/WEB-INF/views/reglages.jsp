@@ -62,7 +62,7 @@
 	
 	<c:if test="${ reglagesSection.equals('races') }">
 	
-	
+		<form method="POST">
 			<table class="table">
 			  <thead>
 			    <tr>
@@ -91,15 +91,31 @@
 			  		
 			  	</c:forEach>
 			  	
+			  	<c:if test="${ addRace }">
+				     	<tr>
+						     	<td> 
+						     	</td>
+						     	<td> 
+						     		<input type="text" name="addLibelle" class="form-control" placeholder="Libellé" required>
+						     	</td>
+						     	
+						     	<td> 
+						     		<button type="submit" class="btn btn-success">Valider</button>
+						     	</td>
+				     	</tr>
+				     	
+				</c:if> 
+			  	
 			  </tbody>
 			</table>
-			<a class="btn btn-success" href="reglages/add?r=race" role="button">Ajouter</a>
+		</form>
+			<a class="btn btn-success" href="reglages/add?r=races" role="button">Ajouter</a>
 	
 	</c:if>
 	
 	<c:if test="${ reglagesSection.equals('couleurs') }">
 	
-	
+		<form method="POST">
 			<table class="table">
 			  <thead>
 			    <tr>
@@ -128,14 +144,31 @@
 			  		
 			  	</c:forEach>
 			  	
+			  	<c:if test="${ addCouleur }">
+				     	<tr>
+						     	<td> 
+						     	</td>
+						     	<td> 
+						     		<input type="text" name="addLibelle" class="form-control" placeholder="Libellé" required>
+						     	</td>
+						     	
+						     	<td> 
+						     		<button type="submit" class="btn btn-success">Valider</button>
+						     	</td>
+				     	</tr>
+				     	
+				</c:if> 
+			  	
 			  </tbody>
 			</table>
-			<a class="btn btn-success" href="reglages/add?r=couleur" role="button">Ajouter</a>
+		</form>
+			<a class="btn btn-success" href="reglages/add?r=couleurs" role="button">Ajouter</a>
 	
 	</c:if>
 	
 	<c:if test="${ reglagesSection.equals('regions') }">
 	
+		<form method="POST">
 	
 			<table class="table">
 			  <thead>
@@ -158,22 +191,37 @@
 				        <a href="reglages/supprimer?r=regions&id=${ region.id }"> <i style="color:red;" class="far fa-trash-alt"></i> </a>
 				      	
 				      </td>
-				      
+				     
 				     
 			    	</tr>
 			  		
 			  		
 			  	</c:forEach>
-			  	
+				     <c:if test="${ addRegion }">
+				     	<tr>
+						     	<td> 
+						     	</td>
+						     	<td> 
+						     		<input type="text" name="addLibelle" class="form-control" placeholder="Libellé" required>
+						     	</td>
+						     	
+						     	<td> 
+						     		<button type="submit" class="btn btn-success">Valider</button>
+						     	</td>
+				     	</tr>
+				     	
+				     </c:if> 
+
 			  </tbody>
 			</table>
-			<a class="btn btn-success" href="reglages/add?r=region" role="button">Ajouter</a>
+		</form>
+			<a class="btn btn-success" href="reglages/add?r=regions" role="button">Ajouter</a>
 	
 	</c:if>
 	
-		<c:if test="${ reglagesSection.equals('departements') }">
+	<c:if test="${ reglagesSection.equals('departements') }">
 	
-	
+		<form method="POST">
 			<table class="table">
 			  <thead>
 			    <tr>
@@ -204,9 +252,34 @@
 			  		
 			  	</c:forEach>
 			  	
+			  	 <c:if test="${ addDepartement }">
+				     	<tr>
+						     	<td> 
+						     	</td>
+						     	
+						     	<td> 
+						     		<input type="text" name="addLibelle" class="form-control" placeholder="Libellé" required>
+						     	</td>
+						     	
+						     	<td> 
+						     		<select name="regionName" class="form-control">
+						     			<c:forEach var="region" items="${ regions }">
+										  <option value="${ region.libelle }">${ region.libelle }</option>
+										 </c:forEach>
+									</select>
+						     	</td>
+						     	
+						     	<td> 
+						     		<button type="submit" class="btn btn-success">Valider</button>
+						     	</td>
+				     	</tr>
+				     	
+				 </c:if> 
+			  	
 			  </tbody>
 			</table>
-			<a class="btn btn-success" href="reglages/add?r=departement" role="button">Ajouter</a>
+		</form>	
+			<a class="btn btn-success" href="reglages/add?r=departements" role="button">Ajouter</a>
 	
 	</c:if>
 				
