@@ -82,6 +82,7 @@
 				      <td>
 				      	
 				        <a href="reglages/supprimer?r=races&id=${ race.id }"> <i style="color:red;" class="far fa-trash-alt"></i> </a>
+				        <a href="reglages/modifier?r=races&id=${ race.id }"> <i style="color:grey;" class="fas fa-edit"></i> </a>
 				      	
 				      </td>
 				      
